@@ -8,6 +8,7 @@ public class Menu {
 	private String menuName;
 	private int price;
 	private int priceType;
+	private String priceTypeName;
 	
 	private ArrayList<Table> tableList = new ArrayList<Table>();
 	
@@ -55,4 +56,15 @@ public class Menu {
 		tableList.add(table);
 	}
 
+	@Override
+	public String toString() {
+		if(priceType == Define.PREMIUM) {
+			priceTypeName = "Premium Pizza (Premium fee:20%, tax:10% 별도부과)";
+		}else if(priceType == Define.CLASSIC) {
+			priceTypeName = "Classic Pizza (Classic fee:10%, tax:10% 별도부과)";
+		}else {
+			priceTypeName = "Sidemenu (Sidemenu fee:0%, tax:10% 별도부과)";
+		}
+		return "Menu [메뉴명=" + menuName + ", 단가=" + price + ", 메뉴가격=" + priceTypeName + "]";
+	}
 }

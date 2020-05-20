@@ -6,7 +6,5 @@ public class PremiumPrice implements StandardPrice {
 	@Override
 	public double getPrice(int price) {
 		return (price*(1+premiumFee))*(1+tax);
-	}
-	
-	
+	}	
 }

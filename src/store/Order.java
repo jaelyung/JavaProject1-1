@@ -39,6 +39,4 @@ public class Order {
 	public String toString() {
 		return "주문서 [테이블번호=" + tableNumber + ", menu=" + menu + ", numberOfOrder=" + numberOfOrder + "]";
 	}
-	
-	
 }

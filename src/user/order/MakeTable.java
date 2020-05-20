@@ -11,8 +11,7 @@ public class MakeTable {
 	public Table selectTable() {
 		Table returnValue = null;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("테이블 번호를 입력하세요.");
-		System.out.println("주문받을 테이블 번호 입력");
+		System.out.print("주문받을 테이블 번호 입력>>");
 		int tableNumber=Integer.parseInt(sc.nextLine());
 		
 		returnValue = new Table(tableNumber);

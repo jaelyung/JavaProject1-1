@@ -15,7 +15,7 @@ import utils.Define;
 public class GenerateOrderReport {
 	Store store = Store.getInstance();
 	public static final String TITLE = " 주문서 \t\t\n";
-	public static final String HEADER = "  메뉴명     |  단가     | 수량  | 총계(세금포함) \n";
+	public static final String HEADER = "  메뉴명            |  단가     | 수량  | 총계(세금포함) \n";
 	public static final String LINE ="--------------------------------\n";
 	private StringBuffer buffer = new StringBuffer();
 
@@ -59,7 +59,7 @@ public class GenerateOrderReport {
 			buffer.append(LINE);
 			
 		}
-		buffer.append("총 결제수량/결제금액    | "+totalAmount+"  | "+totalPrice+" \n");
+		buffer.append("총 결제수량/결제금액           | "+totalAmount+"  | "+totalPrice+" \n");
 		buffer.append(LINE);
 	}
 	

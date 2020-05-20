@@ -39,6 +39,10 @@ public class Store {
 		this.menuList = menuList;
 	}
 	
-	
+	public void displayMenu() {
+		for(int i=0; i<menuList.size(); i++) {
+			System.out.println(menuList.get(i));
+		}
+	}
 	
 }

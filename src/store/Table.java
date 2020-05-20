@@ -27,5 +27,4 @@ public class Table {
 		this.orderList = orderList;
 	}
 	
-	
 }
